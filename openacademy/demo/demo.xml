@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+          <record id="object0" model="openacademy.course">
+            <field name="name">Demo course 0</field>
+            <field name="description">Demo course (description) 0</field>
+          </record>
+
+          <record id="object1" model="openacademy.course">
+            <field name="name">Demo course 1</field>
+            <field name="description">Demo course (description) 1</field>
+          </record>
+
+          <record id="object2" model="openacademy.course">
+            <field name="name">Demo course 2</field>
+            <field name="description">Demo course (description) 2</field>
+          </record>
+
+          <record id="object3" model="openacademy.course">
+            <field name="name">Demo course 3</field>
+            <field name="description">Demo course (description) 3</field>
+          </record>
+
+          <record id="object4" model="openacademy.course">
+            <field name="name">Demo course 4</field>
+            <field name="description">Demo course (description) 4</field>
+          </record>
+    </data>
+</odoo>
