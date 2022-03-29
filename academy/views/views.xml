@@ -1,0 +1,113 @@
+<odoo>
+  <data>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="academy_teachers_list">
+      <field name="name">Academy teachers list</field>
+      <field name="model">academy.teachers</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="biography"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- explicit form view definition -->
+    <record model="ir.ui.view" id="academy_teachers_form">
+      <field name="name">Academy teachers form</field>
+      <field name="model">academy.teachers</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <field name="name"/>
+            <field name="biography"/>
+            <field name="courses_ids">
+                <tree string="Courses" editable="bottom">
+                    <field name="name"/>
+                </tree>
+            </field>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="academy_teachers_action_window">
+      <field name="name">Academy teachers</field>
+      <field name="res_model">academy.teachers</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.ui.view" id="academy_courses_search">
+        <field name="name">Academy courses: search</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="teacher_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="academy_courses_list">
+        <field name="name">Academy courses: list</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <tree string="Courses">
+                <field name="name"/>
+                <field name="teacher_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="academy_course_form">
+      <field name="name">Academy courses: form</field>
+      <field name="model">product.template</field>
+      <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <field name="name"/>
+                <field name="teacher_id"/>
+            </sheet>
+            <div class="oe_chatter">
+                <field name="message_follower_ids" widget="mail_followers"/>
+                <field name="message_ids" widget="mail_thread"/>
+            </div>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="academy_courses_action_window">
+      <field name="name">Academy courses</field>
+      <field name="res_model">product.template</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="Academy"
+              id="academy_menu_root"
+              sequence="0"/>
+
+    <!-- menu categories -->
+    <menuitem name="Academy content"
+              id="academy_content_menu"
+              parent="academy_menu_root"/>
+
+<!--    <menuitem name="Menu 2" id="academy.menu_2" parent="academy.menu_root"/>-->
+
+    <!-- actions -->
+    <menuitem name="Teachers"
+              id="academy_teachers_menu_list"
+              parent="academy_content_menu"
+              action="academy_teachers_action_window"/>
+
+    <menuitem name="Courses"
+              id="academy_courses_menu_list"
+              parent="academy_content_menu"
+              action="academy_courses_action_window"/>
+
+<!--    <menuitem name="Server to list" id="academy" parent="academy.menu_2"-->
+<!--              action="academy.action_server"/>-->
+  </data>
+</odoo>
