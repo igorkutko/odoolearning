@@ -1,0 +1,22 @@
+
+footer {
+    border-top: 5px solid theme-color('primary');
+}
+
+header {
+    background-color: green;
+}
+// These lines will add a default style for our snippet. Now let's create our custom rules for the options.
+
+.s_testimonial {
+    border: 1px solid #EAEAEA;
+    padding: 20px;
+
+    &.s_testimonial_shadow img {
+        box-shadow: 0 2px 5px rgba(51, 51, 51, 0.4);
+    }
+    &.s_testimonial_grey_bg {
+        border: none;
+        background-color: #EAEAEA;
+    }
+}

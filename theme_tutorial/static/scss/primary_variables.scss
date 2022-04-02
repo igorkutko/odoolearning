@@ -1,0 +1,28 @@
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'tutorial-1': (
+            'o-color-1': #85AFA8,
+            'o-color-2': #7E566B,
+            'o-color-3': #85909A,
+            'o-color-4': #969397,
+            'o-color-5': #422335,
+        ),
+        'tutorial-2': (
+            'o-color-1': #54787D,
+            'o-color-2': #6B9997,
+            'o-color-3': #615145,
+            'o-color-4': #C6CCA5,
+            'o-color-5': #412342,
+        ),
+    )
+);
+
+// $o-website-values-palettes: (
+//     (
+//         'color-palettes-name': 'tutorial-1',
+//     ),
+// );
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'tutorial-1');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'tutorial-2');
