@@ -6,17 +6,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 text-center">
-                        <img alt="client" class="rounded-circle" src="/theme_tutorial/static/src/img/client_1.jpg"/>
+                        <img alt="client" class="rounded-circle" src="/theme_tutorial/static/img/client_1.jpg"/>
                         <h3>Client Name</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <img alt="client" class="rounded-circle" src="/theme_tutorial/static/src/img/client_2.jpg"/>
+                        <img alt="client" class="rounded-circle" src="/theme_tutorial/static/img/client_2.jpg"/>
                         <h3>Client Name</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <img alt="client" class="rounded-circle" src="/theme_tutorial/static/src/img/client_3.jpg"/>
+                        <img alt="client" class="rounded-circle" src="/theme_tutorial/static/img/client_3.jpg"/>
                         <h3>Client Name</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -28,7 +28,7 @@
     <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
         <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
             <t t-snippet="theme_tutorial.s_testimonial"
-                    t-thumbnail="/theme_tutorial/static/src/img/ui/snippet_thumb.jpg"/>
+                    t-thumbnail="/theme_tutorial/static/img/snippet_thumb.jpg"/>
         </xpath>
     </template>
 

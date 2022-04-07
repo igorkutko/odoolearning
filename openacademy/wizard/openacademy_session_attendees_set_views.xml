@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="openacademy_session_attendees_set_view_form" model="ir.ui.view">
+      <field name="name">Session attendees set form</field>
+      <field name="model">openacademy.session_attendees_set</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="session_ids"/>
+            <field name="attendees_ids"/>
+          </group>
+          <footer>
+            <button type="object" name="set_session_attendees" string="Set attendees" class="oe_right oe_highlight"/>
+            <button special='cancel' string="Cancel" class="oe_right"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+    <record id="openacademy_session_attendees_set_action" model="ir.actions.act_window">
+      <field name="name">Session attendees set action</field>
+      <field name="res_model">openacademy.session_attendees_set</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+      <field name="binding_model_id" ref="model_openacademy_session"/>
+    </record>
+
+</odoo>

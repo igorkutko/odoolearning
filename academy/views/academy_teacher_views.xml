@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+
+    <!-- explicit list view definition -->
+    <record id="academy_teacher_view_tree" model="ir.ui.view">
+      <field name="name">Academy teachers list</field>
+      <field name="model">academy.teacher</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="biography"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- explicit form view definition -->
+    <record id="academy_teacher_view_form" model="ir.ui.view">
+      <field name="name">Academy teacher form</field>
+      <field name="model">academy.teacher</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <field name="name"/>
+            <field name="biography"/>
+            <field name="courses_ids">
+                <tree string="Courses" editable="bottom">
+                    <field name="name"/>
+                </tree>
+            </field>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record id="academy_teacher_action" model="ir.actions.act_window">
+      <field name="name">Academy teachers</field>
+      <field name="res_model">academy.teacher</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

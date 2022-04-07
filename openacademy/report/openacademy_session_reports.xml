@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record model="ir.actions.report" id="report_openacademy_session">
+
+    <record id="openacademy_session_report" model="ir.actions.report">
         <field name="name">Report Sessions</field>
         <field name="model">openacademy.session</field>
         <field name="report_type">qweb-pdf</field>
@@ -10,4 +11,5 @@
         <field name="binding_model_id" ref="model_openacademy_session"/>
         <field name="binding_type">report</field>
     </record>
+
 </odoo>

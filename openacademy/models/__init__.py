@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from . import models
-from . import partner_openacademy
+from . import openacademy_course
+from . import openacademy_session
+from . import res_partner

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <!-- Top menu item -->
+        <menuitem
+                id="openacademy_menu_root"
+                name="openacademy"
+        />
+
+        <!-- menu categories -->
+        <menuitem
+                id="openacademy_dashboard_menu"
+                name="dashboard"
+                parent="openacademy_menu_root"
+                action="openacademy_dashboard_action"
+                sequence="1"
+        />
+
+        <menuitem
+                id="openacademy_reference"
+                name="reference"
+                parent="openacademy_menu_root"
+                sequence="10"
+        />
+
+        <menuitem
+                id="openacademy_report"
+                name="report"
+                parent="openacademy_menu_root"
+                sequence="20"
+        />
+
+        <!-- actions -->
+        <menuitem
+                id="openacademy_course_menu"
+                name="courses"
+                parent="openacademy_reference"
+                action="openacademy_course_action"
+                sequence="10"
+        />
+
+        <menuitem
+                id="openacademy_session_menu"
+                name="sessions"
+                parent="openacademy_reference"
+                action="openacademy_session_action"
+                sequence="20"
+        />
+
+    </data>
+</odoo>

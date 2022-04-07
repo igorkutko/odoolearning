@@ -27,12 +27,15 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'data/data.xml',
-        'views/views.xml',
-        'views/templates.xml',
+        'data/product_public_category_data.xml',
+        'views/academy_teacher_views.xml',
+        'views/product_template_views.xml',
+        'views/academy_templates.xml',
+        'views/academy_menus.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'data/academy_teacher_demo.xml',
+        'data/product_template_demo.xml',
     ],
 }

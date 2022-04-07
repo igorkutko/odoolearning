@@ -1,6 +1,8 @@
 <odoo>
-    <record model="product.public.category" id="category_courses">
+
+    <record id="category_courses" model="product.public.category">
         <field name="name">Courses</field>
         <field name="parent_id" ref="website_sale.services"/>
     </record>
+
 </odoo>

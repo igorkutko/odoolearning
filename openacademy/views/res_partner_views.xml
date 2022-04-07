@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <record model="ir.ui.view" id="partner_openacademy_form">
+    <record id="view_partner_form" model="ir.ui.view">
         <field name="name">Partner OpenAcademy Form</field>
         <field name='model'>res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
@@ -15,7 +15,6 @@
                 </page>
             </xpath>
         </field>
-
     </record>
 
 </odoo>

@@ -14,13 +14,13 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            'theme_tutorial/static/scss/style.scss',
+            'theme_tutorial/static/src/scss/style.scss',
         ],
         'web._assets_primary_variables': [
-            'theme_tutorial/static/scss/primary_variables.scss',
+            'theme_tutorial/static/src/scss/primary_variables.scss',
         ],
         'web._assets_frontend_helpers': [
-            'theme_tutorial/static/scss/bootstrap_overridden.scss',
+            'theme_tutorial/static/src/scss/bootstrap_overridden.scss',
         ],
         'website.assets_editor': [
             'theme_tutorial/static/src/js/tutorial_editor.js',

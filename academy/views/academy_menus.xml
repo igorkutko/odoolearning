@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+
+    <!-- Top menu item -->
+    <menuitem
+            id="academy_menu_root"
+            name="Academy"
+            sequence="0"
+    />
+
+    <!-- menu categories -->
+    <menuitem
+            id="academy_content_menu"
+            name="Academy content"
+            parent="academy_menu_root"
+    />
+
+    <!-- actions -->
+    <menuitem
+            id="academy_teacher_menu_list"
+            name="Teachers"
+            parent="academy_content_menu"
+            action="academy_teacher_action"
+    />
+
+    <menuitem
+            id="academy_course_menu_list"
+            name="Courses"
+            parent="academy_content_menu"
+            action="academy_course_action"
+    />
+
+  </data>
+</odoo>

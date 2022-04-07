@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record model="res.groups" id="group_openacademy_manager">
+
+    <record id="openacademy_group_manager" model="res.groups">
         <field name="name">OpenAcademy / Manager</field>
         <field name="category_id" ref="base.module_category_openacademy"/>
         <field name="users" eval="[(4,ref('base.user_admin'))]"/>
     </record>
+
 </odoo>
