@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="ata_parser_bitrix_import_menu"
+        name="Import employees from Bitrix"
+        parent="hr.menu_human_resources_configuration"
+        action="ata_parser_bitrix_import_action"
+        sequence="50"
+    />
+</odoo>

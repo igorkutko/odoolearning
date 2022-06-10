@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="ata_parser_bitrix_import_view_form" model="ir.ui.view">
+      <field name="name">Parser Bitrix Import Form</field>
+      <field name="model">ata_parser.bitrix_import</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="url"/>
+            <field name="login"/>
+            <field name="password" password="True"/>
+          </group>
+          <footer>
+            <button type="object" name="import_employees" string="Import employees" class="oe_right oe_highlight"
+                    confirm="Employees will be imported now! Are you sure?"/>
+            <button type="object" name="test_import_employees" string="Test" class="oe_right"
+                    confirm="Would you like to test this import? :)"/>
+            <button special='cancel' string="Cancel" class="oe_right"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+    <record id="ata_parser_bitrix_import_action" model="ir.actions.act_window">
+      <field name="name">Import employees from Bitrix</field>
+      <field name="res_model">ata_parser.bitrix_import</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+      <field name="binding_model_id" ref="hr.model_hr_employee"/>
+    </record>
+
+</odoo>

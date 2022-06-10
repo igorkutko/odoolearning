@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ata_parser_data_import,ata_parser.data_import,model_ata_parser_data_import,base.group_user,1,1,1,1
+access_ata_parser_bitrix_import,ata_parser.bitrix_import,model_ata_parser_bitrix_import,base.group_user,1,1,1,1
